@@ -1,1 +1,1 @@
-src/gz glants-nikki https://glantswrt.pages.dev/openwrt-${OPENWRT_VERSION_MAJOR}/${OPKG_ARCH}/nikkix
+src/gz glants-nikkix https://glantswrt.pages.dev/openwrt-${OPENWRT_VERSION_MAJOR}/${OPKG_ARCH}/nikkix
