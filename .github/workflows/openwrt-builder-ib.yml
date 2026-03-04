@@ -126,10 +126,10 @@ jobs:
           export OPENWRT_VERSION_MAJOR="${{ env.OPENWRT_VERSION_MAJOR }}"
           export OPKG_ARCH="${{ env.OPKG_ARCH }}"
           export SUBTARGET="${{ env.SUBTARGET }}"
-          envsubst '${OPENWRT_VERSION} ${OPENWRT_VERSION_MAJOR} ${OPKG_ARCH} ${SUBTARGET}' < "$FEEDS_TPL" >> imagebuilder/customfeeds
+          envsubst '${OPENWRT_VERSION} ${OPENWRT_VERSION_MAJOR} ${OPKG_ARCH} ${SUBTARGET}' < "$FEEDS_TPL" >> imagebuilder/repositories
 
-          echo "=== customfeeds ==="
-          cat imagebuilder/customfeeds
+          echo "=== repositories ==="
+          cat imagebuilder/repositories
           # Download keys listed in keys.conf (KEYID URL)
           KEYCONF="devices/${{ matrix.directory }}/keys.conf"
           if [ -f "$KEYCONF" ]; then
