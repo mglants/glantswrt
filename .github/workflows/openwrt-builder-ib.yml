@@ -126,12 +126,10 @@ jobs:
           export OPENWRT_VERSION_MAJOR="${{ env.OPENWRT_VERSION_MAJOR }}"
           export OPKG_ARCH="${{ env.OPKG_ARCH }}"
           export SUBTARGET="${{ env.SUBTARGET }}"
-          envsubst '${OPENWRT_VERSION} ${OPENWRT_VERSION_MAJOR} ${OPKG_ARCH} ${SUBTARGET}' < "$FEEDS_TPL" > imagebuilder/customfeeds.conf
+          envsubst '${OPENWRT_VERSION} ${OPENWRT_VERSION_MAJOR} ${OPKG_ARCH} ${SUBTARGET}' < "$FEEDS_TPL" >> imagebuilder/customfeeds
 
-          echo "=== customfeeds.conf ==="
-          cat imagebuilder/customfeeds.conf
-          sed -i '1r imagebuilder/customfeeds.conf' imagebuilder/repositories.conf
-          sed -i '/option check_signature/d' imagebuilder/repositories.conf
+          echo "=== customfeeds ==="
+          cat imagebuilder/customfeeds
           # Download keys listed in keys.conf (KEYID URL)
           KEYCONF="devices/${{ matrix.directory }}/keys.conf"
           if [ -f "$KEYCONF" ]; then
@@ -151,22 +149,22 @@ jobs:
             cp -a "devices/${{ matrix.directory }}/files/." "imagebuilder/files/"
           fi
 
-      - name: Download custom IPKs (optional)
+      - name: Download custom APKs (optional)
         run: |
           set -euo pipefail
-          IPK_LIST="devices/${{ matrix.directory }}/ipk-urls.txt"
-          envsubst < devices/${{ matrix.directory }}/ipk-urls.txt.tpl > $IPK_LIST
-          if [ -f "$IPK_LIST" ]; then
+          APK_LIST="devices/${{ matrix.directory }}/apk-urls.txt"
+          envsubst < devices/${{ matrix.directory }}/apk-urls.txt.tpl > $APK_LIST
+          if [ -f "$APK_LIST" ]; then
             while read -r url; do
               [ -z "${url:-}" ] && continue
               case "$url" in \#*) continue ;; esac
-              echo "Downloading IPK: $url"
+              echo "Downloading APK: $url"
               curl -fL --retry 3 --retry-delay 2 \
                 -o "imagebuilder/packages/$(basename "$url")" "$url"
-            done < "$IPK_LIST"
+            done < "$APK_LIST"
 
           else
-            echo "No ipk-urls.txt for ${{ matrix.directory }} (skipping custom IPKs)"
+            echo "No apk-urls.txt for ${{ matrix.directory }} (skipping custom APKs)"
           fi
 
       - name: Build firmware
