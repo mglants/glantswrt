@@ -171,7 +171,12 @@ jobs:
           set -euo pipefail
           cd imagebuilder
           make image PROFILE="${PROFILE}" PACKAGES="${PACKAGES}" FILES="files"
-
+      - name: Show local package repo
+        if: ${{ always() }}
+        run: |
+          ls -lah imagebuilder/packages || true
+          find imagebuilder/packages -maxdepth 1 -type f | sort || true
+          [ -f imagebuilder/packages/packages.adb ] && hexdump -C imagebuilder/packages/packages.adb | head -100 || true
       - name: Collect firmware
         run: |
           set -euo pipefail
