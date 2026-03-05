@@ -152,14 +152,17 @@ jobs:
         run: |
           set -euo pipefail
           APK_LIST="devices/${{ matrix.directory }}/apk-urls.txt"
-          envsubst < devices/${{ matrix.directory }}/apk-urls.txt.tpl > $APK_LIST
+          envsubst < "devices/${{ matrix.directory }}/apk-urls.txt.tpl" > "$APK_LIST"
+
           if [ -f "$APK_LIST" ]; then
-            while read -r url; do
-              [ -z "${url:-}" ] && continue
-              case "$url" in \#*) continue ;; esac
-              echo "Downloading APK: $url"
+            while read -r name url; do
+              [ -z "${name:-}" ] && continue
+              case "$name" in \#*) continue ;; esac
+              [ -z "${url:-}" ] && { echo "Skipping invalid line: missing URL for $name"; continue; }
+
+              echo "Downloading APK: $name from $url"
               curl -fL --retry 3 --retry-delay 2 \
-                -o "imagebuilder/packages/$(basename "$url")" "$url"
+                -o "imagebuilder/packages/${name}.apk" "$url"
             done < "$APK_LIST"
 
           else
