@@ -174,7 +174,7 @@ jobs:
       - name: Show local package repo
         if: ${{ always() }}
         run: |
-          sudo apt-get install bsdmainutils
+          sudo apt-get -qq install -y --no-install-recommends bsdmainutils
           ls -lah imagebuilder/packages || true
           find imagebuilder/packages -maxdepth 1 -type f | sort || true
           [ -f imagebuilder/packages/packages.adb ] && hexdump -C imagebuilder/packages/packages.adb | head -100 || true
