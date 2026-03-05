@@ -171,20 +171,7 @@ jobs:
           set -euo pipefail
           cd imagebuilder
           make image PROFILE="${PROFILE}" PACKAGES="${PACKAGES}" FILES="files"
-      - name: Show local package repo
-        if: ${{ always() }}
-        run: |
-          ls -lah imagebuilder/packages || true
-          find imagebuilder/packages -maxdepth 1 -type f | sort || true
-          [ -f imagebuilder/packages/packages.adb ] && hexdump -C imagebuilder/packages/packages.adb | head -100 || true
-          [ -f imagebuilder/packages/packages.tar.gz ] && tar -tzf imagebuilder/packages/packages.tar.gz || true
 
-      - name: Upload local package repo
-        if: ${{ always() }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: local-apk-repo
-          path: imagebuilder/packages/
       - name: Collect firmware
         run: |
           set -euo pipefail
