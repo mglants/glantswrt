@@ -96,6 +96,7 @@ def build_routers() -> list[dict]:
         openwrt_version = env_vars.get("OPENWRT_VERSION", "")
 
         packages = parse_packages(packages_path)
+        comment = env_vars.get("DEVICE_COMMENT", "")
 
         routers.append({
             "id": router_id,
@@ -104,6 +105,7 @@ def build_routers() -> list[dict]:
             "openwrt_version": openwrt_version,
             "packages": packages,
             "packages_count": len(packages),
+            "comment": comment,
 
             # helpful file links in repo
             "packages_file_url": github_blob_url(repo_name, default_branch, f"devices/{router_id}/packages.txt"),
