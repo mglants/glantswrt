@@ -50,7 +50,7 @@ The firmware includes a curated set of networking and management packages:
 ### Firmwares
 
 Vendor | Router | OpenWrt | Packages | Release | Comment
---- | --- | --- | --- | ---
+--- | --- | --- | --- | --- | ---
 cudy | **tr3000(TR30)** | v25.12.0 | [22](https://github.com/mglants/glantswrt/blob/main/devices/tr3000/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=tr3000-&expanded=true) | Travel Router good for LTE
 cudy | **wr3000(WBR3000UAX)** | v25.12.0 | [8](https://github.com/mglants/glantswrt/blob/main/devices/wr3000/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=wr3000-&expanded=true) | OpenWRT is not supported on the new WR3000 2.0 revision!
 cudy | **wr3000h** | v25.12.0 | [8](https://github.com/mglants/glantswrt/blob/main/devices/wr3000h/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=wr3000h-&expanded=true) | Kinda low memory, easy to flash
