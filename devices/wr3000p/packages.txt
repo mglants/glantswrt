@@ -1,0 +1,8 @@
+luci
+nikkix
+luci-app-nikkix
+kmod-amneziawg
+luci-proto-amneziawg
+amneziawg-tools
+luci-proto-wireguard
+wireguard-tools
