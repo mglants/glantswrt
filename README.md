@@ -54,6 +54,7 @@ Vendor | Router | OpenWrt | Packages | Release
 cudy | **tr3000(TR30)** | v25.12.0 | [22](https://github.com/mglants/glantswrt/blob/main/devices/tr3000/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=tr3000-&expanded=true)
 cudy | **wr3000(WBR3000UAX)** | v25.12.0 | [8](https://github.com/mglants/glantswrt/blob/main/devices/wr3000/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=wr3000-&expanded=true)
 cudy | **wr3000h** | v25.12.0 | [8](https://github.com/mglants/glantswrt/blob/main/devices/wr3000h/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=wr3000h-&expanded=true)
+cudy | **wr3000p** | v25.12.0 | [8](https://github.com/mglants/glantswrt/blob/main/devices/wr3000p/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=wr3000p-&expanded=true)
 cudy | **wr3000s** | v25.12.0 | [8](https://github.com/mglants/glantswrt/blob/main/devices/wr3000s/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=wr3000s-&expanded=true)
 Keenetic | **KN-3510** | v25.12.0 | [8](https://github.com/mglants/glantswrt/blob/main/devices/kn3510/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=kn3510-&expanded=true)
 netis | **n6** | v25.12.0 | [21](https://github.com/mglants/glantswrt/blob/main/devices/netisn6/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=netisn6-&expanded=true)
