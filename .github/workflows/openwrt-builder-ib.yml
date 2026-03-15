@@ -189,7 +189,7 @@ jobs:
           path: output/${{ matrix.directory }}
 
       - name: Upload firmware to release
-        uses: softprops/action-gh-release@e798e6a1ede8d07b74ac4cdac6bdfa4cc1653907
+        uses: softprops/action-gh-release@1853d73993c8ca1b2c9c1a7fede39682d0ab5c2a
         id: release
         if: steps.tag.outputs.status == 'success' && !cancelled()
         env:
