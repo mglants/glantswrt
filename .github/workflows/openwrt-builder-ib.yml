@@ -200,14 +200,14 @@ jobs:
           files: output/${{ matrix.directory }}/*/*
 
       - name: Delete workflow runs
-        uses: Mattraks/delete-workflow-runs@main
+        uses: Mattraks/delete-workflow-runs@b3018382ca039b53d238908238bd35d1fb14f8ee # main
         with:
           retain_days: 0
           keep_minimum_runs: 5
 
       - name: Remove old Releases
         if: env.UPLOAD_RELEASE == 'true' && !cancelled()
-        uses: dev-drprasad/delete-older-releases@master
+        uses: dev-drprasad/delete-older-releases@49df26ac460ea2b7f943d0e33244981fcdfaeea3 # master
         with:
           keep_latest: 5
           delete_tags: true
