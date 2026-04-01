@@ -1,6 +1,6 @@
 luci
-nikkix
-luci-app-nikkix
+nikki
+luci-app-nikki
 kmod-amneziawg
 luci-proto-amneziawg
 amneziawg-tools
