@@ -52,7 +52,7 @@ The firmware includes a curated set of networking and management packages:
 Vendor | Router | OpenWrt | Packages | Release | Comment
 --- | --- | --- | --- | --- | ---
 cudy | **tr3000(TR30)** | v25.12.2 | [22](https://github.com/mglants/glantswrt/blob/main/devices/tr3000/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=tr3000-&expanded=true) | Travel Router good for LTE
-cudy | **wr3000(WBR3000UAX)** | v25.12.2 | [8](https://github.com/mglants/glantswrt/blob/main/devices/wr3000/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=wr3000-&expanded=true) | OpenWRT is not supported on the new WR3000 2.0 revision!
+cudy | **wr3000** | v25.12.2 | [8](https://github.com/mglants/glantswrt/blob/main/devices/wr3000/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=wr3000-&expanded=true) | OpenWRT is not supported on the new WR3000 2.0 revision!
 cudy | **wr3000h** | v25.12.2 | [8](https://github.com/mglants/glantswrt/blob/main/devices/wr3000h/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=wr3000h-&expanded=true) | Kinda low memory, easy to flash
 cudy | **wr3000p** | v25.12.2 | [8](https://github.com/mglants/glantswrt/blob/main/devices/wr3000p/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=wr3000p-&expanded=true) | Recommended! Easy to flash
 cudy | **wr3000s** | v25.12.2 | [8](https://github.com/mglants/glantswrt/blob/main/devices/wr3000s/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=wr3000s-&expanded=true) | Kinda low memory, easy to flash
