@@ -32,7 +32,7 @@ OPKG_ARCH="aarch64_cortex-a53"
 # -----------------------------------------------------------------------------
 # Optional metadata (not required by the workflow, but useful later)
 # -----------------------------------------------------------------------------
-DEVICE_NAME="wr3000(WBR3000UAX)"
+DEVICE_NAME="wr3000"
 DEVICE_VENDOR="cudy"
 DEVICE_MODEL="wr3000"
 DEVICE_COMMENT="OpenWRT is not supported on the new WR3000 2.0 revision!"
