@@ -1,6 +1,6 @@
 # Cudy flash helper
 
-[`flash_wr3000p.sh`](flash_wr3000p.sh) automates a two-stage flash flow for supported Cudy routers:
+[`flash_cudy.sh`](flash_cudy.sh) automates a two-stage flash flow for supported Cudy routers:
 
 1. log into the stock HTTPS web UI
 2. upload a signed factory image from [`signed/`](signed)
@@ -43,13 +43,13 @@ Optional:
 Default model:
 
 ```bash
-bash ./flash_wr3000p.sh --stock-pass 'your-current-stock-password'
+bash ./flash_cudy.sh --stock-pass 'your-current-stock-password'
 ```
 
 Select another model by basename:
 
 ```bash
-bash ./flash_wr3000p.sh \
+bash ./flash_cudy.sh \
   --model wr3000h \
   --stock-pass 'your-current-stock-password'
 ```
@@ -57,7 +57,7 @@ bash ./flash_wr3000p.sh \
 Override firmware image paths explicitly:
 
 ```bash
-bash ./flash_wr3000p.sh \
+bash ./flash_cudy.sh \
   --signed-fw signed/wr3000s.bin \
   --openwrt-fw openwrt/custom-wr3000s-sysupgrade.bin \
   --stock-pass 'your-current-stock-password'
@@ -66,7 +66,7 @@ bash ./flash_wr3000p.sh \
 Enable debug logging:
 
 ```bash
-DEBUG=1 bash ./flash_wr3000p.sh --stock-pass 'your-current-stock-password'
+DEBUG=1 bash ./flash_cudy.sh --stock-pass 'your-current-stock-password'
 ```
 
 ## Options
@@ -92,11 +92,11 @@ The script connects to the stock UI at `https://192.168.10.1` by default and han
 - first-boot password creation wizard
 - existing password login form
 
-The login flow in [`stock_login()`](flash_wr3000p.sh:189) computes the password hash expected by the Cudy UI and keeps the authenticated cookie for later upload requests.
+The login flow in [`stock_login()`](flash_cudy.sh:189) computes the password hash expected by the Cudy UI and keeps the authenticated cookie for later upload requests.
 
 ### 2. Signed image upload
 
-The script uploads the selected signed image through the stock upgrade flow in [`flash_signed_from_stock()`](flash_wr3000p.sh:326).
+The script uploads the selected signed image through the stock upgrade flow in [`flash_signed_from_stock()`](flash_cudy.sh:326).
 
 ### 3. Boot into OpenWrt
 
@@ -117,13 +117,13 @@ This usually means the current stock password is wrong.
 Use:
 
 ```bash
-bash ./flash_wr3000p.sh --stock-pass 'real-current-password'
+bash ./flash_cudy.sh --stock-pass 'real-current-password'
 ```
 
 If the router is on the first-boot wizard, you can also define the password to set:
 
 ```bash
-bash ./flash_wr3000p.sh \
+bash ./flash_cudy.sh \
   --stock-pass admin \
   --stock-new-pass 'NewTempPassword123!'
 ```
@@ -133,22 +133,22 @@ bash ./flash_wr3000p.sh \
 Run with debug enabled:
 
 ```bash
-DEBUG=1 bash ./flash_wr3000p.sh --stock-pass 'your-current-stock-password'
+DEBUG=1 bash ./flash_cudy.sh --stock-pass 'your-current-stock-password'
 ```
 
 ### OpenWrt SSH requires a password
 
-Pass the root password so [`wait_for_ssh()`](flash_wr3000p.sh:159) and [`openwrt_scp()`](flash_wr3000p.sh:390) can use `sshpass`:
+Pass the root password so [`wait_for_ssh()`](flash_cudy.sh:159) and [`openwrt_scp()`](flash_cudy.sh:390) can use `sshpass`:
 
 ```bash
-bash ./flash_wr3000p.sh \
+bash ./flash_cudy.sh \
   --stock-pass 'your-current-stock-password' \
   --openwrt-pass 'your-openwrt-root-password'
 ```
 
 ### Sysupgrade disconnects with connection failed
 
-That is normally expected. [`sysupgrade`](flash_wr3000p.sh:492) terminates the SSH session while rebooting.
+That is normally expected. [`sysupgrade`](flash_cudy.sh:492) terminates the SSH session while rebooting.
 
 ## Notes
 
