@@ -34,7 +34,7 @@ jobs:
           python-version: "3.14"
 
       - name: Generate recommended-devices.md
-        working-directory: openwrt-custom/.ci/scripts
+        working-directory: .ci/scripts
         run: |
           python3 toh_recommend.py --format markdown > ../../recommended-devices.md
 
@@ -45,6 +45,6 @@ jobs:
           repo: ${{ github.repository }}
           branch: main
           empty: false
-          file_pattern: "openwrt-custom/recommended-devices.md"
+          file_pattern: "./recommended-devices.md"
         env:
           GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
