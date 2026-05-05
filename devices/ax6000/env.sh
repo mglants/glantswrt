@@ -16,7 +16,7 @@
 set -euo pipefail
 OPENWRT_CHANNEL="release"
 # renovate: datasource=git-tags depName=https://github.com/openwrt/openwrt.git
-OPENWRT_VERSION="v25.12.2"
+OPENWRT_VERSION="v25.12.3"
 
 TARGET="mediatek"
 SUBTARGET="filogic"
