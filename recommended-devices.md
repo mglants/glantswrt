@@ -60,8 +60,8 @@ Matches: 133
 | MERCUSYS | MR90X | MediaTek MT7986BLA | 512 | - | 4 | 1600 | WiFi Router |  | see devicepage | [HW](https://openwrt.org/toh/hwdata/mercusys/mercusys_mr90x_v1), [Device](https://openwrt.org/toh/mercusys/mr90x_v1) |
 | NETGEAR | EAX17 | MediaTek MT7981B | 512 | - | 2 | 1300 | Range Extender |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/netgear/netgear_eax17) |
 | NETGEAR | RAX120 | Qualcomm IPQ8074A | 1024 | 2x 3.0 | 4 | 2200 | WiFi Router | v2 does not say "RAX120 v2" on label, but has FCC info on right of sticker that v1 does not have | see git-commit | [HW](https://openwrt.org/toh/hwdata/netgear/netgear_rax120_v2), [Device](https://openwrt.org/inbox:toh:netgear:netgear_rax120_nighthawk_ax12) |
-| NETGEAR | SXR80 | Qualcomm IPQ8074A | 1024 | - | 4 | 2200 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/netgear/netgear_orbi_pro_sxr80) |
-| NETGEAR | SXS80 | Qualcomm IPQ8074A | 1024 | - | 4 | 2200 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/netgear/netgear_orbi_pro_sxs80) |
+| NETGEAR | SXR80 | Qualcomm IPQ8074A | 1024 | - | 4 | 2200 | WiFi Router |  | see devicepage, see git-commit | [HW](https://openwrt.org/toh/hwdata/netgear/netgear_orbi_pro_sxr80), [Device](https://openwrt.org/toh/netgear/sxr80) |
+| NETGEAR | SXS80 | Qualcomm IPQ8074A | 1024 | - | 4 | 2200 | WiFi Router |  | see devicepage, see git-commit | [HW](https://openwrt.org/toh/hwdata/netgear/netgear_orbi_pro_sxs80), [Device](https://openwrt.org/toh/netgear/sxs80) |
 | NETGEAR | WAX206 | MediaTek MT7622BV | 512 | - | 2 | 1350 | WiFi Router |  | TFTP generic, GUI OEM, U-Boot TFTP recovery, see git-commit | [HW](https://openwrt.org/toh/hwdata/netgear/netgear_wax206), [Device](https://openwrt.org/toh/netgear/wax206) |
 | NETGEAR | WAX214 | Qualcomm IPQ6010 | 512 | - | 4 | 1800 | WiFi AP |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/netgear/netgear_wax214) |
 | NETGEAR | WAX218 | Qualcomm IPQ8072A | 512 | - | 4 | 2200 | WiFi AP |  | GUI generic, CLI generic, see git-commit | [HW](https://openwrt.org/toh/hwdata/netgear/netgear_wax218_1) |
