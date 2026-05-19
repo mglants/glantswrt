@@ -1,6 +1,6 @@
 Source: https://openwrt.org/toh.json
 Filters: RAM >= 512, Cores >= 2, MHz >= 1300, 5GHz contains 'ax', C.Release contains '2'
-Matches: 133
+Matches: 134
 | Brand | Model | CPU | RAM | USB | Cores | MHz | Type | Comments | Install | HwData |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 8devices | Mango DVK | Qualcomm IPQ6010 | 512 | 1x 3.0 | 4 | 1800 | Single Board Computer |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/8devices/8devices_mango_dvk) |
@@ -83,7 +83,8 @@ Matches: 133
 | Routerich | BE7200 | MediaTek MT7987A | 1024 | 1x 3.0 | 4 | 2000 | Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/routerich/routerich_be7200) |
 | Ruijie | RG-X60 PRO | MediaTek MT7986A | 512 | - | 4 | 2000 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/ruijie/ruijie_rg-x60_pro), [Device](https://openwrt.org/toh/ruijie/rg-x60_pro) |
 | Silicom | Cordoba Edge Gateway IA3003.05 | Intel Atom C3338R | 4096 | 2x 2.0 | 2 | 1800 | WiFi Router |  | x86 installation | [HW](https://openwrt.org/toh/hwdata/silicom/silicom_cordoba_edge_gateway) |
-| Sinovoip | Banana Pi BPI-R4 | MediaTek MT7988AV | 4096 | 1x 3.0 | 4 | 1800 | Single Board Computer | WLAN requires optional module, custom double miniPCIe add-on board | unknown | [HW](https://openwrt.org/toh/hwdata/sinovoip/sinovoip_banana_pi_bpi-r4_2.5ge), [Device](https://openwrt.org/inbox:toh:sinovoip:bananapi_bpi-r4) |
+| Sinovoip | Banana Pi BPI-R4 | MediaTek MT7988AV | 4096 | 1x 3.0 | 4 | 1800 | Single Board Computer | WLAN requires optional MT7995 module, or other miniPCIe cards. | see devicepage | [HW](https://openwrt.org/toh/hwdata/sinovoip/sinovoip_banana_pi_bpi-r4), [Device](https://openwrt.org/toh/sinovoip/bananapi_bpi-r4) |
+| Sinovoip | Banana Pi BPI-R4 | MediaTek MT7988AV | 4096 | 1x 3.0 | 4 | 1800 | Single Board Computer | WLAN requires optional module, custom double miniPCIe add-on board | unknown | [HW](https://openwrt.org/toh/hwdata/sinovoip/sinovoip_banana_pi_bpi-r4_2.5ge), [Device](https://openwrt.org/toh/sinovoip/bananapi_bpi-r4) |
 | Sinovoip | Banana Pi BPi-R3 | MediaTek MT7986A | 2048 | 2x 2.0, 1x 3.0 | 4 | 2000 | Single Board Computer |  | SD card | [HW](https://openwrt.org/toh/hwdata/sinovoip/sinovoip_bananapi_bpi-r3), [Device](https://openwrt.org/toh/sinovoip/bananapi_bpi-r3) |
 | Sinovoip | Banana Pi BPi-R3 Mini | MediaTek MT7986AV | 2048 | 1x 2.0 | 4 | 2000 | WiFi Router | 8GB eMMC | see devicepage | [HW](https://openwrt.org/toh/hwdata/sinovoip/sinovoip_bananapi_bpi_r3_mini), [Device](https://openwrt.org/toh/sinovoip/bananapi_bpi_r3_mini) |
 | SmartRG | SDG-841t6 | MediaTek MT7622A | 512 | 1x 3.0 | 2 | 1350 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-841t6) |
