@@ -1,6 +1,6 @@
 Source: https://openwrt.org/toh.json
 Filters: RAM >= 512, Cores >= 2, MHz >= 1300, 5GHz contains 'ax', C.Release contains '2'
-Matches: 134
+Matches: 135
 | Brand | Model | CPU | RAM | USB | Cores | MHz | Type | Comments | Install | HwData |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 8devices | Mango DVK | Qualcomm IPQ6010 | 512 | 1x 3.0 | 4 | 1800 | Single Board Computer |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/8devices/8devices_mango_dvk) |
@@ -38,6 +38,7 @@ Matches: 134
 | Edge-corE | EAP111 | MediaTek MT7981A | 512 | - | 2 | 1300 | WiFi AP | IP55 Rated, BLE and ZigBee radio hardware, unsure if supported | see git-commit | [HW](https://openwrt.org/toh/hwdata/edge-core/edge-core_eap111) |
 | Edimax | CAX1800 | Qualcomm IPQ8070A | 512 | - | 4 | 1400 | WiFi AP |  | U-Boot TFTP + serial recovery | [HW](https://openwrt.org/toh/hwdata/edimax/edimax_cax1800_1) |
 | GL.iNet | GL-MT3000 (Beryl AX) | MediaTek MT7981BA | 512 | 1x 3.0 | 2 | 1300 | Travel Router | HFO, WED, and DSA all supported. | GUI OEM, GL.Inet installation | [HW](https://openwrt.org/toh/hwdata/gl.inet/gl.inet_gl-mt3000), [Device](https://openwrt.org/toh/gl.inet/gl-mt3000) |
+| GL.iNet | GL-MT3600BE (Beryl 7) | MediaTek MT7987AV | 512 | 1x 3.0 | 4 | 2000 | Travel Router |  | GL.Inet installation, see devicepage, see git-commit | [HW](https://openwrt.org/toh/hwdata/gl.inet/gl.inet_gl-mt3600be), [Device](https://openwrt.org/toh/gl.inet/gl-mt3600be) |
 | GL.iNet | GL-MT6000 (Flint 2) | MediaTek MT7986AV | 1024 | 1x 3.0 | 4 | 2000 | WiFi Router | Includes 8GB eMMC. DSA, HFO, and WED, are all supported. | GUI OEM, CLI generic, Sysupgrade, GL.Inet installation, U-Boot TFTP + serial recovery, U-Boot web recovery | [HW](https://openwrt.org/toh/hwdata/gl.inet/gl.inet_gl-mt6000), [Device](https://openwrt.org/toh/gl.inet/gl-mt6000) |
 | GL.iNet | GL-X3000 (Spitz AX) | MediaTek MT7981A | 512 | 1x 2.0 | 2 | 1300 | Router |  | GL.Inet installation, U-Boot web recovery, see git-commit | [HW](https://openwrt.org/toh/hwdata/gl.inet/gl.inet_gl-x3000), [Device](https://openwrt.org/toh/gl.inet/gl-x3000) |
 | GL.iNet | GL-XE3000 (Puli AX) | MediaTek MT7981A | 512 | 1x 2.0 | 2 | 1300 | Travel Router - Battery powered |  | GL.Inet installation, U-Boot web recovery, see git-commit | [HW](https://openwrt.org/toh/hwdata/gl.inet/gl.inet_gl-xe3000), [Device](https://openwrt.org/toh/gl.inet/gl-x3000) |
