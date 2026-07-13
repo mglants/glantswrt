@@ -93,7 +93,7 @@ Matches: 135
 | SmartRG | SDG-8614 | MediaTek MT7986A | 2048 | 1x 3.0 | 4 | 2000 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8614) |
 | SmartRG | SDG-8622 | MediaTek MT7986 | 2048 | 1x 3.0 | 4 | 2000 | WiFi AP |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8622) |
 | SmartRG | SDG-8632 | MediaTek MT7986 | 2048 | 1x 3.0 | 4 | 2000 | WiFi AP |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8632) |
-| SmartRG | SDG-8733 | MediaTek MT7988AV | 2048 | 1x 3.0 | 4 | 1800 | WiFi Router |  | unknown | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8733) |
+| SmartRG | SDG-8733 | MediaTek MT7988AV | 2048 | 1x 3.0 | 4 | 1800 | WiFi Router |  | U-Boot TFTP + serial recovery | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8733), [Device](https://openwrt.org/toh/smartrg/sdg-8733) |
 | SmartRG | SDG-8733A | MediaTek MT7988D | 2048 |  | 3 | 1800 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8733a) |
 | SmartRG | SDG-8734 | MediaTek MT7988AV | 2048 | 1x 3.0 | 4 | 1800 | WiFi Router |  | unknown | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8734) |
 | Spectrum | SAX1V1K | Qualcomm IPQ8072A | 2048 | - | 4 | 2200 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/spectrum/spectrum_sax1v1k), [Device](https://openwrt.org/toh/spectrum/sax1v1k) |
