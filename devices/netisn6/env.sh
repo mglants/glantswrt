@@ -21,7 +21,7 @@ OPENWRT_VERSION="v25.12.5"
 TARGET="ramips"
 SUBTARGET="mt7621"
 
-# Must match an ImageBuilder PROFILE exactly
+# Must match an ImageBuilder PROFILE exactlys
 PROFILE="netis_n6"
 # -----------------------------------------------------------------------------
 # opkg feed architecture
