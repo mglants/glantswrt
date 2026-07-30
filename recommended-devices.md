@@ -1,6 +1,6 @@
 Source: https://openwrt.org/toh.json
 Filters: RAM >= 512, Cores >= 2, MHz >= 1300, 5GHz contains 'ax', C.Release contains '2'
-Matches: 135
+Matches: 136
 | Brand | Model | CPU | RAM | USB | Cores | MHz | Type | Comments | Install | HwData |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 8devices | Mango DVK | Qualcomm IPQ6010 | 512 | 1x 3.0 | 4 | 1800 | Single Board Computer |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/8devices/8devices_mango_dvk) |
@@ -137,4 +137,5 @@ Matches: 135
 | ZyXEL | T-56 | MediaTek MT7986A | 1024 | 1x 3.0 | 4 | 2000 | WiFi Router | T-56 is an ISP (Odido) branded EX5601-T1.  Note however, the EX5601 installation instruction does NOT work here.   Check out OpenWrt Forum topic URL for more info. | U-Boot TFTP + serial recovery, see devicepage | [HW](https://openwrt.org/toh/hwdata/zyxel/zyxel_t-56), [Device](https://openwrt.org/toh/zyxel/t-56) |
 | ZyXEL | WX5600-T0 | MediaTek MT7986B | 512 | - | 4 | 1600 | WiFi Router | WX5600-T0 is a service-provider device so it appears official firmware update is only provided via ISP channel. | see devicepage, unknown | [HW](https://openwrt.org/toh/hwdata/zyxel/zyxel_wx5600-t0), [Device](https://openwrt.org/toh/zyxel/wx5600-t0) |
 | ipTIME | AX7800M-6E | MediaTek MT7986AV | 512 | 1x 3.0 | 4 | 2000 | WiFi Router |  | U-Boot TFTP recovery, see devicepage, see git-commit | [HW](https://openwrt.org/toh/hwdata/iptime/iptime_ax7800m-6e), [Device](https://openwrt.org/toh/iptime/ax7800m-6e) |
+| netis | NX62 | MediaTek MT7986AV | 512 | 1x 3.0 | 4 | 2000 | WiFi Router | Identical hardware to Netcore N60 Pro. | see git-commit | [HW](https://openwrt.org/toh/hwdata/netis/netis_nx62), [Device](https://openwrt.org/toh/netcore/n60_pro) |
 | prpl Foundation | Haze (WNC LVRP) | Qualcomm IPQ8072A | 2048 | 1x 3.0 | 4 | 2200 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/prpl/prpl_haze_wnc_lvrp) |
