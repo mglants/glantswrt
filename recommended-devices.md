@@ -1,6 +1,6 @@
 Source: https://openwrt.org/toh.json
 Filters: RAM >= 512, Cores >= 2, MHz >= 1300, 5GHz contains 'ax', C.Release contains '2'
-Matches: 136
+Matches: 139
 | Brand | Model | CPU | RAM | USB | Cores | MHz | Type | Comments | Install | HwData |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 8devices | Mango DVK | Qualcomm IPQ6010 | 512 | 1x 3.0 | 4 | 1800 | Single Board Computer |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/8devices/8devices_mango_dvk) |
@@ -15,8 +15,10 @@ Matches: 136
 | Acer | Predator Connect W6 | MediaTek MT7986AV | 1024 | 1x 3.0 | 4 | 2000 | WiFi Router |  | see devicepage | [HW](https://openwrt.org/toh/hwdata/acer/acer_predator_w6), [Device](https://openwrt.org/toh/acer/predator_w6) |
 | Acer | Predator Connect W6d | MediaTek MT7986AV | 1024 | 1x 3.0 | 4 | 2000 | WiFi Router |  | see devicepage | [HW](https://openwrt.org/toh/hwdata/acer/acer_predator_w6d), [Device](https://openwrt.org/toh/acer/predator_w6) |
 | Acer | Predator Connect W6x | MediaTek MT7986AV | 1024 | 1x 3.0 | 4 | 2000 | WiFi Router |  | Serial | [HW](https://openwrt.org/toh/hwdata/acer/acer_predator_connect_w6x), [Device](https://openwrt.org/toh/acer/predator_connect_w6x) |
+| Airpi | AP3000M | MediaTek MT7981B | 1024 |  | 2 | 1300 | WiFi AP |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/airpi/airpi_ap3000m) |
 | Arcadyan / Astoria | AW1000 | Qualcomm IPQ8072A | 1024 | 1x 3.0 | 4 | 2000 | WiFi Router |  | U-Boot TFTP recovery, see git-commit | [HW](https://openwrt.org/toh/hwdata/arcadyanastoria/arcadyanastoria_aw1000), [Device](https://openwrt.org/toh/arcadyan/astoria/aw1000) |
 | Arcadyan / Astoria | Mozart | MediaTek MT7988A | 4096 |  | 4 | 1800 | WiFi Router |  | unknown | [HW](https://openwrt.org/toh/hwdata/arcadyan/astoria:arcadyan_astoria_mozart) |
+| AsiaRF | AP7986 | MediaTek MT7986AV | 512 | Yes, 1x 3.0 | 4 | 2000 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/asiarf/asiarf_ap7986_-003) |
 | Belkin | RT3200 | MediaTek MT7622BV | 512 | 1x 2.0 | 2 | 1350 | WiFi Router | 160 MHz bandwidth on 5 GHz WiFi is slower than 80 MHz, support may be removed in the future | see devicepage | [HW](https://openwrt.org/toh/hwdata/belkin/belkin_rt3200), [Device](https://openwrt.org/toh/linksys/e8450) |
 | Buffalo | WSR-3200AX4S | MediaTek MT7622B | 512 | - | 2 | 1350 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/buffalo/buffalo_wsr-3200ax4s) |
 | Buffalo | WXR-5950AX12 | Qualcomm IPQ8074A | 1024 | 1x 3.0 | 4 | 2200 | WiFi Router | WiFi 5GHz band can either support 4x4 MU-MIMO 160Mhz channel -or- 8x8 MU-MIMO 80Mhz channel configuration, but NOT BOTH. | TFTP generic, see git-commit | [HW](https://openwrt.org/toh/hwdata/buffalo/buffalo_wxr-5950ax12_1), [Device](https://openwrt.org/toh/buffalo/wxr-5950ax12) |
@@ -86,6 +88,7 @@ Matches: 136
 | Silicom | Cordoba Edge Gateway IA3003.05 | Intel Atom C3338R | 4096 | 2x 2.0 | 2 | 1800 | WiFi Router |  | x86 installation | [HW](https://openwrt.org/toh/hwdata/silicom/silicom_cordoba_edge_gateway) |
 | Sinovoip | Banana Pi BPI-R4 | MediaTek MT7988AV | 4096 | 1x 3.0 | 4 | 1800 | Single Board Computer | WLAN requires optional MT7995 module, or other miniPCIe cards. | see devicepage | [HW](https://openwrt.org/toh/hwdata/sinovoip/sinovoip_banana_pi_bpi-r4), [Device](https://openwrt.org/toh/sinovoip/bananapi_bpi-r4) |
 | Sinovoip | Banana Pi BPI-R4 | MediaTek MT7988AV | 4096 | 1x 3.0 | 4 | 1800 | Single Board Computer | WLAN requires optional module, custom double miniPCIe add-on board | unknown | [HW](https://openwrt.org/toh/hwdata/sinovoip/sinovoip_banana_pi_bpi-r4_2.5ge), [Device](https://openwrt.org/toh/sinovoip/bananapi_bpi-r4) |
+| Sinovoip | Banana Pi BPI-R4 | MediaTek MT7987AV | 2048 | Yes, 1x 3.0 | 4 | 2000 | Single Board Computer |  |  | [HW](https://openwrt.org/toh/hwdata/sinovoip/sinovoip_bananapi_bpi-r4_lite) |
 | Sinovoip | Banana Pi BPi-R3 | MediaTek MT7986A | 2048 | 2x 2.0, 1x 3.0 | 4 | 2000 | Single Board Computer |  | SD card | [HW](https://openwrt.org/toh/hwdata/sinovoip/sinovoip_bananapi_bpi-r3), [Device](https://openwrt.org/toh/sinovoip/bananapi_bpi-r3) |
 | Sinovoip | Banana Pi BPi-R3 Mini | MediaTek MT7986AV | 2048 | 1x 2.0 | 4 | 2000 | WiFi Router | 8GB eMMC | see devicepage | [HW](https://openwrt.org/toh/hwdata/sinovoip/sinovoip_bananapi_bpi_r3_mini), [Device](https://openwrt.org/toh/sinovoip/bananapi_bpi_r3_mini) |
 | SmartRG | SDG-841t6 | MediaTek MT7622A | 512 | 1x 3.0 | 2 | 1350 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-841t6) |
