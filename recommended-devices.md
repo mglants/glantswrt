@@ -91,7 +91,7 @@ Matches: 139
 | Sinovoip | Banana Pi BPI-R4 | MediaTek MT7987AV | 2048 | Yes, 1x 3.0 | 4 | 2000 | Single Board Computer |  |  | [HW](https://openwrt.org/toh/hwdata/sinovoip/sinovoip_bananapi_bpi-r4_lite) |
 | Sinovoip | Banana Pi BPi-R3 | MediaTek MT7986A | 2048 | 2x 2.0, 1x 3.0 | 4 | 2000 | Single Board Computer |  | SD card | [HW](https://openwrt.org/toh/hwdata/sinovoip/sinovoip_bananapi_bpi-r3), [Device](https://openwrt.org/toh/sinovoip/bananapi_bpi-r3) |
 | Sinovoip | Banana Pi BPi-R3 Mini | MediaTek MT7986AV | 2048 | 1x 2.0 | 4 | 2000 | WiFi Router | 8GB eMMC | see devicepage | [HW](https://openwrt.org/toh/hwdata/sinovoip/sinovoip_bananapi_bpi_r3_mini), [Device](https://openwrt.org/toh/sinovoip/bananapi_bpi_r3_mini) |
-| SmartRG | SDG-841t6 | MediaTek MT7622A | 512 | 1x 3.0 | 2 | 1350 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-841t6) |
+| SmartRG | 841-t6 | MediaTek MT7622A | 512 | 1x 3.0 | 2 | 1350 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-841t6) |
 | SmartRG | SDG-8612 | MediaTek MT7986 | 2048 | 1x 3.0 | 4 | 2000 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8612) |
 | SmartRG | SDG-8614 | MediaTek MT7986A | 2048 | 1x 3.0 | 4 | 2000 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8614) |
 | SmartRG | SDG-8622 | MediaTek MT7986 | 2048 | 1x 3.0 | 4 | 2000 | WiFi AP |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8622) |
