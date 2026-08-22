@@ -1,6 +1,6 @@
 Source: https://openwrt.org/toh.json
 Filters: RAM >= 512, Cores >= 2, MHz >= 1300, 5GHz contains 'ax', C.Release contains '2'
-Matches: 139
+Matches: 141
 | Brand | Model | CPU | RAM | USB | Cores | MHz | Type | Comments | Install | HwData |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 8devices | Mango DVK | Qualcomm IPQ6010 | 512 | 1x 3.0 | 4 | 1800 | Single Board Computer |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/8devices/8devices_mango_dvk) |
@@ -21,6 +21,7 @@ Matches: 139
 | AsiaRF | AP7986 | MediaTek MT7986AV | 512 | Yes, 1x 3.0 | 4 | 2000 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/asiarf/asiarf_ap7986_-003) |
 | Belkin | RT3200 | MediaTek MT7622BV | 512 | 1x 2.0 | 2 | 1350 | WiFi Router | 160 MHz bandwidth on 5 GHz WiFi is slower than 80 MHz, support may be removed in the future | see devicepage | [HW](https://openwrt.org/toh/hwdata/belkin/belkin_rt3200), [Device](https://openwrt.org/toh/linksys/e8450) |
 | Buffalo | WSR-3200AX4S | MediaTek MT7622B | 512 | - | 2 | 1350 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/buffalo/buffalo_wsr-3200ax4s) |
+| Buffalo | WSR-6000AX8 | MediaTek MT7986B | 512 | - | 4 | 1600 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/buffalo/buffalo_wsr-6000ax8) |
 | Buffalo | WXR-5950AX12 | Qualcomm IPQ8074A | 1024 | 1x 3.0 | 4 | 2200 | WiFi Router | WiFi 5GHz band can either support 4x4 MU-MIMO 160Mhz channel -or- 8x8 MU-MIMO 80Mhz channel configuration, but NOT BOTH. | TFTP generic, see git-commit | [HW](https://openwrt.org/toh/hwdata/buffalo/buffalo_wxr-5950ax12_1), [Device](https://openwrt.org/toh/buffalo/wxr-5950ax12) |
 | CMCC | RAX3000M | MediaTek MT7981B | 512 | - | 2 | 1300 | WiFi Router | Choose carefully the firmware for either NAND -or- EMMC version of RAX3000M router.  Flashing the wrong firmware version could brick your router !! | see devicepage | [HW](https://openwrt.org/toh/hwdata/cmcc/cmcc_rax3000m), [Device](https://openwrt.org/toh/cmcc/rax3000m) |
 | COMFAST | CF-WR632AX | MediaTek MT7981BA | 512 | 1x 3.0 | 2 | 1300 | Travel Router | Dedicated OpenWrt U-Boot layout images are available, enabling full utilization of the NAND storage space. Refer to the Git commit message for further information. | GUI OEM, Sysupgrade, U-Boot TFTP + serial recovery, U-Boot web recovery, see git-commit | [HW](https://openwrt.org/toh/hwdata/comfast/comfast_cf-wr632ax), [Device](https://openwrt.org/toh/comfast/cf-wr632ax) |
@@ -28,6 +29,7 @@ Matches: 139
 | Cudy | AP3000 | MediaTek MT7981BA | 512 | - | 2 | 1300 | WiFi AP | A new variant of AP3000 v1 has been discovered with a different 2.5GbE network PHY chip "Motorcomm YT8821" .  See Device Page for more info. | TFTP generic, GUI OEM, see devicepage | [HW](https://openwrt.org/toh/hwdata/cudy/cudy_ap3000_v1), [Device](https://openwrt.org/toh/cudy/ap3000_v1) |
 | Cudy | TR3000 | MediaTek MT7981BA | 512 | 1x 3.0 | 2 | 1300 | Travel Router | Separate U-Boot Mod Image (UBI) is available for TR3000 128MB model to utilize full NAND storage space (additional ~45 MB).  See Device Page for more info. | see devicepage | [HW](https://openwrt.org/toh/hwdata/cudy/cudy_tr3000_v1), [Device](https://openwrt.org/toh/cudy/tr3000) |
 | Cudy | TR3000 | MediaTek MT7981BA | 512 | 1x 3.0 | 2 | 1300 | Travel Router | Currently, Uboot Mod image (UBI) is only available for TR3000 128MB model.  There is no Uboot Mod Image for TR3000 256 MB model. | see git-commit | [HW](https://openwrt.org/toh/hwdata/cudy/cudy_tr3000_v1_256mb), [Device](https://openwrt.org/toh/cudy/tr3000) |
+| Cudy | WBR3000UAX | MediaTek MT7981B | 512 | 1x 3.0 | 2 | 1300 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/cudy/cudy_wbr3000uax_v1) |
 | Cudy | WR3000P | MediaTek MT7981 | 512 | Yes, 1x 2.0 | 2 | 1300 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/cudy/cudy_wr3000p_v1) |
 | D-Link | AQUILA PRO AI E30 | MediaTek MT7981BA | 512 | - | 2 | 1300 | Range Extender | E30 has 1 LAN port only.  The device can either be configured as an Access Point or a WiFi extender | D-Link Recovery GUI, see git-commit | [HW](https://openwrt.org/toh/hwdata/d-link/d-link_aquila_pro_ai_e30_a1), [Device](https://openwrt.org/toh/d-link/aquila_pro_ai_e30_a1) |
 | D-Link | AQUILA PRO AI M30 | MediaTek MT7981BA | 512 | - | 2 | 1300 | WiFi Router |  | D-Link Recovery GUI | [HW](https://openwrt.org/toh/hwdata/d-link/d-link_aquila_pro_ai_m30), [Device](https://openwrt.org/toh/d-link/aquila_pro_ai_m30_a1) |
