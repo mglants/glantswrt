@@ -1,6 +1,6 @@
 Source: https://openwrt.org/toh.json
 Filters: RAM >= 512, Cores >= 2, MHz >= 1300, 5GHz contains 'ax', C.Release contains '2'
-Matches: 142
+Matches: 141
 | Brand | Model | CPU | RAM | USB | Cores | MHz | Type | Comments | Install | HwData |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 8devices | Mango DVK | Qualcomm IPQ6010 | 512 | 1x 3.0 | 4 | 1800 | Single Board Computer |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/8devices/8devices_mango_dvk) |
@@ -19,7 +19,6 @@ Matches: 142
 | Arcadyan / Astoria | AW1000 | Qualcomm IPQ8072A | 1024 | 1x 3.0 | 4 | 2000 | WiFi Router |  | U-Boot TFTP recovery, see git-commit | [HW](https://openwrt.org/toh/hwdata/arcadyanastoria/arcadyanastoria_aw1000), [Device](https://openwrt.org/toh/arcadyan/astoria/aw1000) |
 | Arcadyan / Astoria | Mozart | MediaTek MT7988A | 4096 |  | 4 | 1800 | WiFi Router |  | unknown | [HW](https://openwrt.org/toh/hwdata/arcadyan/astoria:arcadyan_astoria_mozart) |
 | AsiaRF | AP7986 | MediaTek MT7986AV | 512 | Yes, 1x 3.0 | 4 | 2000 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/asiarf/asiarf_ap7986_-003) |
-| Askey | SBE1V1K | Qualcomm IPQ9570 | 2048 | - | 4 | 2200 | WiFi Router |  | U-Boot TFTP + serial recovery | [HW](https://openwrt.org/toh/hwdata/askey/askey_sbe1v1k), [Device](https://openwrt.org/toh/askey/sbe1v1k) |
 | Belkin | RT3200 | MediaTek MT7622BV | 512 | 1x 2.0 | 2 | 1350 | WiFi Router | 160 MHz bandwidth on 5 GHz WiFi is slower than 80 MHz, support may be removed in the future | see devicepage | [HW](https://openwrt.org/toh/hwdata/belkin/belkin_rt3200), [Device](https://openwrt.org/toh/linksys/e8450) |
 | Buffalo | WSR-3200AX4S | MediaTek MT7622B | 512 | - | 2 | 1350 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/buffalo/buffalo_wsr-3200ax4s) |
 | Buffalo | WSR-6000AX8 | MediaTek MT7986B | 512 | - | 4 | 1600 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/buffalo/buffalo_wsr-6000ax8) |
