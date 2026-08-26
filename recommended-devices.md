@@ -1,6 +1,6 @@
 Source: https://openwrt.org/toh.json
 Filters: RAM >= 512, Cores >= 2, MHz >= 1300, 5GHz contains 'ax', C.Release contains '2'
-Matches: 141
+Matches: 143
 | Brand | Model | CPU | RAM | USB | Cores | MHz | Type | Comments | Install | HwData |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 8devices | Mango DVK | Qualcomm IPQ6010 | 512 | 1x 3.0 | 4 | 1800 | Single Board Computer |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/8devices/8devices_mango_dvk) |
@@ -73,7 +73,9 @@ Matches: 141
 | NETGEAR | WAX220 | MediaTek MT7986AV | 1024 | - | 4 | 2000 | WiFi AP |  | TFTP generic, see git-commit | [HW](https://openwrt.org/toh/hwdata/netgear/netgear_wax220), [Device](https://openwrt.org/toh/netgear/wax220) |
 | NETGEAR | WAX620 | Qualcomm IPQ8072A | 1024 | - | 4 | 1689 | WiFi AP |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/netgear/netgear_wax620) |
 | NETGEAR | WAX630 | Qualcomm IPQ8074A | 1024 | - | 4 | 1651 | WiFi AP |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/netgear/netgear_wax630) |
+| NRadio | C8-668GL | MediaTek MT7981B | 1024 | - | 2 | 1300 | Modem |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/nradio/nradio_c8-668gl) |
 | Netcore | N60 Pro | MediaTek MT7986AV | 512 | 1x 3.0 | 4 | 2000 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/netcore/netcore_n60_pro) |
+| Netcraze | NAP-630 | Mediatek MT7981B | 512 | - | 2 | 1300 | WiFi AP |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/netcraze/netcraze_nap-630) |
 | Netcraze | NC-1812 | MediaTek MT7988D | 1024 | 1x 2.0, 1x 3.0 | 3 | 1800 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/netcraze/netcraze_nc-1812) |
 | OpenEmbed | SOM7981 | MediaTek MT7981BA | 512 | 1x 3.0 | 2 | 1300 | Single Board Computer |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/openembed/openembed_som7981) |
 | OpenFi | 6c | MediaTek MT7981B | 1024 | 1x 3.0 | 2 | 1300 | Travel Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/openfi/openfi_6c) |
