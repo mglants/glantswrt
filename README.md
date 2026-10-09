@@ -26,7 +26,7 @@ _Collection of firmwares for routers to fight against censorship_
 This repository contains a custom **OpenWrt firmware** focused on reliability, reproducibility, and autonomous operation in constrained network environments.
 The goal is to provide a ready-to-use system that requires minimal user configuration while remaining flexible and maintainable over time.
 
-- Nikki is main software for VLESS subscriptions
+- [PureWRT](https://github.com/mglants/purewrt) is main software for VLESS subscriptions
 - Some packages are added to make VPN tunnels
 - Minimal software packs for routers
 - For LTE/4G routers software are included
@@ -35,8 +35,9 @@ The goal is to provide a ready-to-use system that requires minimal user configur
 
 The firmware includes a curated set of networking and management packages:
 
-- `nikki`
-- `luci-app-nikki`
+- `mihomo-alpha`
+- `purewrt`
+- `luci-app-purewrt`
 - `luci`
 - `kmod-amneziawg`
 - `luci-proto-amneziawg`
@@ -47,17 +48,26 @@ The firmware includes a curated set of networking and management packages:
 ---
 
 
+
+### Dependency updates
+
+Renovate tracks `OPENWRT_VERSION`, `AMNEZIAWG_VERSION`, and `PUREWRT_VERSION` in each router's `env.sh`.
+OpenWrt and AmneziaWG updates share a pull request because the AmneziaWG release tag must match the OpenWrt version.
+The build downloads AmneziaWG APKs for that release and PureWRT/LuCI APKs from the selected PureWRT release archive.
+It reads APK metadata to name the local files and pins those package versions during image creation; `mihomo-alpha` and other feed dependencies continue to come from the configured feeds.
+Upstream replacements of assets under an unchanged release tag are picked up on the next build, but do not produce a Renovate version update.
+
 ### Firmwares
 
 Vendor | Router | OpenWrt | Packages | Release | Comment
 --- | --- | --- | --- | --- | ---
-cudy | **tr3000(TR30)** | v25.12.5 | [22](https://github.com/mglants/glantswrt/blob/main/devices/tr3000/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=tr3000-&expanded=true) | Travel Router good for LTE
-cudy | **wr3000** | v25.12.5 | [8](https://github.com/mglants/glantswrt/blob/main/devices/wr3000/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=wr3000-&expanded=true) | OpenWRT is not supported on the new WR3000 2.0 revision!
-cudy | **wr3000h** | v25.12.5 | [8](https://github.com/mglants/glantswrt/blob/main/devices/wr3000h/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=wr3000h-&expanded=true) | Kinda low memory, easy to flash
-cudy | **wr3000p** | v25.12.5 | [8](https://github.com/mglants/glantswrt/blob/main/devices/wr3000p/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=wr3000p-&expanded=true) | Recommended! Easy to flash
-cudy | **wr3000s** | v25.12.5 | [8](https://github.com/mglants/glantswrt/blob/main/devices/wr3000s/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=wr3000s-&expanded=true) | Kinda low memory, easy to flash
-Keenetic | **KN-3510** | v25.12.5 | [8](https://github.com/mglants/glantswrt/blob/main/devices/kn3510/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=kn3510-&expanded=true) | Flashes only via TFTP
+cudy | **tr3000(TR30)** | v25.12.5 | [23](https://github.com/mglants/glantswrt/blob/main/devices/tr3000/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=tr3000-&expanded=true) | Travel Router good for LTE
+cudy | **wr3000** | v25.12.5 | [9](https://github.com/mglants/glantswrt/blob/main/devices/wr3000/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=wr3000-&expanded=true) | OpenWRT is not supported on the new WR3000 2.0 revision!
+cudy | **wr3000h** | v25.12.5 | [9](https://github.com/mglants/glantswrt/blob/main/devices/wr3000h/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=wr3000h-&expanded=true) | Kinda low memory, easy to flash
+cudy | **wr3000p** | v25.12.5 | [9](https://github.com/mglants/glantswrt/blob/main/devices/wr3000p/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=wr3000p-&expanded=true) | Recommended! Easy to flash
+cudy | **wr3000s** | v25.12.5 | [9](https://github.com/mglants/glantswrt/blob/main/devices/wr3000s/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=wr3000s-&expanded=true) | Kinda low memory, easy to flash
+Keenetic | **KN-3510** | v25.12.5 | [9](https://github.com/mglants/glantswrt/blob/main/devices/kn3510/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=kn3510-&expanded=true) | Flashes only via TFTP
 netis | **n6** | v25.12.5 | [23](https://github.com/mglants/glantswrt/blob/main/devices/netisn6/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=netisn6-&expanded=true) | Kinda low memory, good for LTE
-xiaomi | **ax3000t** | v25.12.5 | [8](https://github.com/mglants/glantswrt/blob/main/devices/ax3000t/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=ax3000t-&expanded=true) | OpenWRT is not supported on the new RD03v2!
-Xiaomi | **Redmi AX6000** | v25.12.5 | [8](https://github.com/mglants/glantswrt/blob/main/devices/ax6000/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=ax6000-&expanded=true) | Do not mismatch with Xiaomi AX6000, not supported
-xiaomi | **ax6s** | v25.12.5 | [8](https://github.com/mglants/glantswrt/blob/main/devices/ax6s/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=ax6s-&expanded=true) | Recent models ship with a newer bootloader that has been known to cause a soft-brick after 6 reboots
+xiaomi | **ax3000t** | v25.12.5 | [9](https://github.com/mglants/glantswrt/blob/main/devices/ax3000t/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=ax3000t-&expanded=true) | OpenWRT is not supported on the new RD03v2!
+Xiaomi | **Redmi AX6000** | v25.12.5 | [9](https://github.com/mglants/glantswrt/blob/main/devices/ax6000/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=ax6000-&expanded=true) | Do not mismatch with Xiaomi AX6000, not supported
+xiaomi | **ax6s** | v25.12.5 | [9](https://github.com/mglants/glantswrt/blob/main/devices/ax6s/packages.txt) | [download](https://github.com/mglants/glantswrt/releases?q=ax6s-&expanded=true) | Recent models ship with a newer bootloader that has been known to cause a soft-brick after 6 reboots

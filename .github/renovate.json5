@@ -1,24 +1,48 @@
 {
-  $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  extends: [
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
     "github>bjw-s/renovate-config"
   ],
-  ignorePaths: [".archive/**"],
+  "ignorePaths": [
+    ".archive/**"
+  ],
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["(^|/)env\.sh"],
-      "matchStrings": [
-        "# renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)\\n.+\"(?<currentValue>.*?)\""
+      "managerFilePatterns": [
+        "/(^|/)env\\.sh$/"
       ],
-      "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
+      "matchStrings": [
+        "# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)\\r?\\n[A-Z_]+=\"(?<currentValue>[^\"]+)\""
+      ],
+      "versioningTemplate": "semver"
     }
   ],
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch"],
-      "matchDatasources": ["git-tags"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "matchDatasources": [
+        "git-tags"
+      ],
       "automerge": true
+    },
+    {
+      "matchDepNames": [
+        "https://github.com/openwrt/openwrt.git",
+        "Slava-Shchipunov/awg-openwrt"
+      ],
+      "groupName": "OpenWrt and AmneziaWG",
+      "automerge": false
+    },
+    {
+      "matchDepNames": [
+        "mglants/purewrt"
+      ],
+      "groupName": "PureWRT",
+      "automerge": false
     }
-  ],
+  ]
 }

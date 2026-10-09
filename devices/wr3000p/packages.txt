@@ -1,6 +1,7 @@
 luci
-nikki
-luci-app-nikki
+mihomo-alpha
+purewrt
+luci-app-purewrt
 kmod-amneziawg
 luci-proto-amneziawg
 amneziawg-tools

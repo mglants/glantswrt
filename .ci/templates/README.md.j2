@@ -26,7 +26,7 @@ _Collection of firmwares for routers to fight against censorship_
 This repository contains a custom **OpenWrt firmware** focused on reliability, reproducibility, and autonomous operation in constrained network environments.
 The goal is to provide a ready-to-use system that requires minimal user configuration while remaining flexible and maintainable over time.
 
-- Nikki is main software for VLESS subscriptions
+- [PureWRT](https://github.com/mglants/purewrt) is main software for VLESS subscriptions
 - Some packages are added to make VPN tunnels
 - Minimal software packs for routers
 - For LTE/4G routers software are included
@@ -35,8 +35,9 @@ The goal is to provide a ready-to-use system that requires minimal user configur
 
 The firmware includes a curated set of networking and management packages:
 
-- `nikki`
-- `luci-app-nikki`
+- `mihomo-alpha`
+- `purewrt`
+- `luci-app-purewrt`
 - `luci`
 - `kmod-amneziawg`
 - `luci-proto-amneziawg`
@@ -46,6 +47,15 @@ The firmware includes a curated set of networking and management packages:
 
 ---
 
+
+
+### Dependency updates
+
+Renovate tracks `OPENWRT_VERSION`, `AMNEZIAWG_VERSION`, and `PUREWRT_VERSION` in each router's `env.sh`.
+OpenWrt and AmneziaWG updates share a pull request because the AmneziaWG release tag must match the OpenWrt version.
+The build downloads AmneziaWG APKs for that release and PureWRT/LuCI APKs from the selected PureWRT release archive.
+It reads APK metadata to name the local files and pins those package versions during image creation; `mihomo-alpha` and other feed dependencies continue to come from the configured feeds.
+Upstream replacements of assets under an unchanged release tag are picked up on the next build, but do not produce a Renovate version update.
 
 ### Firmwares
 

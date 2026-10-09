@@ -18,6 +18,11 @@ OPENWRT_CHANNEL="release"
 # renovate: datasource=git-tags depName=https://github.com/openwrt/openwrt.git
 OPENWRT_VERSION="v25.12.5"
 
+# renovate: datasource=github-releases depName=Slava-Shchipunov/awg-openwrt
+AMNEZIAWG_VERSION="v25.12.5"
+# renovate: datasource=github-releases depName=mglants/purewrt
+PUREWRT_VERSION="v0.6.1"
+
 TARGET="mediatek"
 SUBTARGET="mt7622"
 
