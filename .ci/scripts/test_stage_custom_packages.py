@@ -61,6 +61,16 @@ class ImageBuilderFormattingTest(unittest.TestCase):
                 self.assertIn('dnsmasq-full', lines)
                 self.assertNotIn('dnsmasq', lines)
 
+    def test_modemfeed_profiles_include_signing_key(self):
+        root = Path(__file__).resolve().parents[2]
+        for feed in (root / 'devices').glob('*/feeds.conf.tpl'):
+            if 'openwrt.132lan.ru' in feed.read_text():
+                with self.subTest(device=feed.parent.name):
+                    keys = feed.with_name('keys.conf').read_text().splitlines()
+                    urls = [line.split()[1] for line in keys if line.strip()]
+                    self.assertIn(
+                        'https://openwrt.132lan.ru/packages/25.12/packages/repo.pem', urls)
+
 
 if __name__ == '__main__':
     unittest.main()

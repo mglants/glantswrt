@@ -16,7 +16,7 @@ modeminfo
 modeminfo-serial-fibocom
 modeminfo-serial-xmm
 modeminfo-serial-dell
-modeminfo-qmi
+qminfo
 luci-app-modeminfo
 luci-app-ttl
 luci-app-smstools3
