@@ -8,6 +8,18 @@ import tarfile
 import tempfile
 
 
+def fix_imagebuilder_version_formatting(makefile):
+    # OpenWrt 25.12.5 leaves pkg_ver set after an explicitly pinned package.
+    # Reset it for unpinned packages, including the default system packages.
+    original = '$(if $(findstring =,$(pkg)),$(eval pkg_ver:==$(lastword $(subst =, ,$(pkg)))))'
+    corrected = '$(eval pkg_ver:=$(if $(findstring =,$(pkg)),=$(lastword $(subst =, ,$(pkg)))))'
+    content = makefile.read_text()
+    if original in content:
+        makefile.write_text(content.replace(original, corrected))
+    elif corrected not in content:
+        raise ValueError('Unrecognized ImageBuilder FormatPackages; review version handling')
+
+
 def stage_apk(source, destination, apk, expected_name, expected_version=None):
     metadata = subprocess.check_output([str(apk), 'adbdump', str(source)], text=True)
     name = re.search(r'^  name: (\S+)$', metadata, re.M).group(1)
@@ -34,6 +46,7 @@ def main():
     awg = os.environ['AMNEZIAWG_VERSION']
     if awg != f'v{openwrt}':
         raise ValueError('AMNEZIAWG_VERSION must match OPENWRT_VERSION (kernel ABI)')
+    fix_imagebuilder_version_formatting(Path('imagebuilder/Makefile'))
     pins = {}
     with tempfile.TemporaryDirectory() as work:
         work = Path(work)

@@ -21,3 +21,5 @@ qminfo
 luci-app-modeminfo
 luci-app-ttl
 luci-app-smstools3
+-dnsmasq
+dnsmasq-full

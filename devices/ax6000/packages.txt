@@ -7,3 +7,5 @@ luci-proto-amneziawg
 amneziawg-tools
 luci-proto-wireguard
 wireguard-tools
+-dnsmasq
+dnsmasq-full

@@ -21,3 +21,5 @@ luci-app-modeminfo
 luci-app-ttl
 luci-app-smstools3
 luci-app-travelmate
+-dnsmasq
+dnsmasq-full

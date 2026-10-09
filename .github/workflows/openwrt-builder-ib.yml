@@ -150,6 +150,9 @@ jobs:
           if [ -d "devices/${{ matrix.directory }}/files" ]; then
             cp -a "devices/${{ matrix.directory }}/files/." "imagebuilder/files/"
           fi
+      - name: Test package staging regressions
+        run: python3 -m unittest discover -s .ci/scripts -p 'test_*.py' -v
+
       - name: Stage versioned release packages
         env:
           DEVICE_DIR: devices/${{ matrix.directory }}
