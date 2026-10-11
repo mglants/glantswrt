@@ -31,7 +31,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
         with:
-          python-version: "3.14"
+          python-version: "3.15"
 
       - name: Generate recommended-devices.md
         working-directory: .ci/scripts
