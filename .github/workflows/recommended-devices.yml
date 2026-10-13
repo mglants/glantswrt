@@ -39,7 +39,7 @@ jobs:
           python3 toh_recommend.py --format markdown > ../../recommended-devices.md
 
       - name: Commit recommended-devices.md
-        uses: planetscale/ghcommit-action@25309d8005ac7c3bcd61d3fe19b69e0fe47dbdde # v0.2.20
+        uses: planetscale/ghcommit-action@a6b150b81dca5dd027baa898604418eec9e11465 # v0.2.22
         with:
           commit_message: "chore: regenerate recommended-devices.md [skip ci]"
           repo: ${{ github.repository }}
