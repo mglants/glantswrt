@@ -1,4 +1,4 @@
-Source: https://toh.openwrt.org/toh.json
+Source: https://openwrt.org/toh.json
 Filters: RAM >= 512, Cores >= 2, MHz >= 1300, 5GHz contains 'ax', C.Release contains '2'
 Matches: 143
 | Brand | Model | CPU | RAM | USB | Cores | MHz | Type | Comments | Install | HwData |
