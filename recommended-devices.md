@@ -1,6 +1,6 @@
 Source: https://openwrt.org/toh.json
 Filters: RAM >= 512, Cores >= 2, MHz >= 1300, 5GHz contains 'ax', C.Release contains '2'
-Matches: 143
+Matches: 144
 | Brand | Model | CPU | RAM | USB | Cores | MHz | Type | Comments | Install | HwData |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 8devices | Mango DVK | Qualcomm IPQ6010 | 512 | 1x 3.0 | 4 | 1800 | Single Board Computer |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/8devices/8devices_mango_dvk) |
@@ -37,6 +37,7 @@ Matches: 143
 | D-Link | EAGLE PRO AI M32 | MediaTek MT7622BV | 512 | - | 2 | 1350 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/d-link/d-link_eagle_pro_ai_m32_a1) |
 | D-Link | EAGLE PRO AI R32 | MediaTek MT7622BV | 512 | - | 2 | 1350 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/d-link/d-link_eagle_pro_ai_r32_a1), [Device](https://openwrt.org/toh/d-link/eagle_pro_ai_r32_a1) |
 | Dynalink | DL-WRX36 | Qualcomm IPQ8072A | 1024 | 1x 3.0 | 4 | 2200 | WiFi Router |  | CLI generic | [HW](https://openwrt.org/toh/hwdata/dynalink/dynalink_dl-wrx36), [Device](https://openwrt.org/toh/dynalink/dl-wrx36) |
+| ELECOM | WRC-X3000GS3 | MediaTek MT7981B | 512 | - | 2 | 1300 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/elecom/elecom_wrc-x3000gs3) |
 | ELECOM | WRC-X3200GST3 | MediaTek MT7622B | 512 | - | 2 | 1350 | WiFi Router |  | GUI OEM, see git-commit | [HW](https://openwrt.org/toh/hwdata/elecom/elecom_wrc-x3200gst3) |
 | Edge-corE | EAP102 | Qualcomm IPQ8070A | 1024 | 2x 2.0 | 4 | 1400 | WiFi AP |  | U-Boot TFTP recovery, see git-commit | [HW](https://openwrt.org/toh/hwdata/edge-core/edge-core_eap102_1) |
 | Edge-corE | EAP111 | MediaTek MT7981A | 512 | - | 2 | 1300 | WiFi AP | IP55 Rated, BLE and ZigBee radio hardware, unsure if supported | see git-commit | [HW](https://openwrt.org/toh/hwdata/edge-core/edge-core_eap111) |
