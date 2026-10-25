@@ -1,6 +1,6 @@
 Source: https://openwrt.org/toh.json
 Filters: RAM >= 512, Cores >= 2, MHz >= 1300, 5GHz contains 'ax', C.Release contains '2'
-Matches: 144
+Matches: 145
 | Brand | Model | CPU | RAM | USB | Cores | MHz | Type | Comments | Install | HwData |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 8devices | Mango DVK | Qualcomm IPQ6010 | 512 | 1x 3.0 | 4 | 1800 | Single Board Computer |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/8devices/8devices_mango_dvk) |
@@ -101,6 +101,7 @@ Matches: 144
 | SmartRG | SDG-8614 | MediaTek MT7986A | 2048 | 1x 3.0 | 4 | 2000 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8614) |
 | SmartRG | SDG-8622 | MediaTek MT7986 | 2048 | 1x 3.0 | 4 | 2000 | WiFi AP |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8622) |
 | SmartRG | SDG-8632 | MediaTek MT7986 | 2048 | 1x 3.0 | 4 | 2000 | WiFi AP |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8632) |
+| SmartRG | SDG-8712 | MediaTek MT7987A | 1024 | Yes, 1x 2.0 | 4 | 2000 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8712) |
 | SmartRG | SDG-8733 | MediaTek MT7988AV | 2048 | 1x 3.0 | 4 | 1800 | WiFi Router | OEM firmware DL requires (free) registration with vendor. | U-Boot TFTP + serial recovery | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8733), [Device](https://openwrt.org/toh/smartrg/sdg-8733) |
 | SmartRG | SDG-8733A | MediaTek MT7988D | 2048 | 1x 3.0 | 3 | 1800 | WiFi Router | OEM firmware DL requires (free) registration with vendor. | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8733a), [Device](https://openwrt.org/toh/smartrg/sdg-8733) |
 | SmartRG | SDG-8734 | MediaTek MT7988AV | 2048 | 1x 3.0 | 4 | 1800 | WiFi Router | OEM firmware DL requires (free) registration with vendor. | unknown | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8734) |
