@@ -21,7 +21,7 @@ OPENWRT_VERSION="v25.12.6"
 # renovate: datasource=github-releases depName=Slava-Shchipunov/awg-openwrt
 AMNEZIAWG_VERSION="v25.12.5"
 # renovate: datasource=github-releases depName=mglants/purewrt
-PUREWRT_VERSION="v0.6.1"
+PUREWRT_VERSION="v0.10.0"
 
 TARGET="mediatek"
 SUBTARGET="filogic"
