@@ -1,6 +1,6 @@
 Source: https://openwrt.org/toh.json
 Filters: RAM >= 512, Cores >= 2, MHz >= 1300, 5GHz contains 'ax', C.Release contains '2'
-Matches: 145
+Matches: 148
 | Brand | Model | CPU | RAM | USB | Cores | MHz | Type | Comments | Install | HwData |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 8devices | Mango DVK | Qualcomm IPQ6010 | 512 | 1x 3.0 | 4 | 1800 | Single Board Computer |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/8devices/8devices_mango_dvk) |
@@ -54,6 +54,9 @@ Matches: 145
 | Keenetic | KN-3911 (Challenger SE) | MediaTek MT7981B | 512 | - | 2 | 1300 | Range Extender |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/keenetic/keenetic_kn-3911) |
 | Linksys | E8450 | MediaTek MT7622BV | 512 | 1x 2.0 | 2 | 1350 | WiFi Router |  | see devicepage | [HW](https://openwrt.org/toh/hwdata/linksys/linksys_e8450), [Device](https://openwrt.org/toh/linksys/e8450) |
 | Linksys | HomeWRK | Qualcomm IPQ8174 | 2048 | 1x 3.0 | 4 | 1400 | WiFi Router | HomeWRK and MX4300 share the same hardware but have different u-boot layout, hence use different OpenWrt firmware images.  See more:  https://github.com/openwrt/openwrt/pull/16070\ | U-Boot USB recovery, see devicepage, see git-commit | [HW](https://openwrt.org/toh/hwdata/linksys/linksys_homewrk), [Device](https://openwrt.org/toh/linksys/mx4300) |
+| Linksys | MR7310 | Qualcomm IPQ6028 | 512 | 1x 3.0 | 4 | 1800 | WiFi Router |  | GUI OEM, see devicepage, see git-commit | [HW](https://openwrt.org/toh/hwdata/linksys/linksys_mr7310), [Device](https://openwrt.org/inbox:toh:linksys:mr7350_1.0) |
+| Linksys | MR7320 | Qualcomm IPQ6028 | 512 | 1x 3.0 | 4 | 1800 | WiFi Router |  | GUI OEM, see devicepage, see git-commit | [HW](https://openwrt.org/toh/hwdata/linksys/linksys_mr7320), [Device](https://openwrt.org/inbox:toh:linksys:mr7350_1.0) |
+| Linksys | MR7340 | Qualcomm IPQ6028 | 512 | 1x 3.0 | 4 | 1800 | WiFi Router |  | GUI OEM, see devicepage, see git-commit | [HW](https://openwrt.org/toh/hwdata/linksys/linksys_mr7340), [Device](https://openwrt.org/inbox:toh:linksys:mr7350_1.0) |
 | Linksys | MR7350 | Qualcomm IPQ6028 | 512 | 1x 3.0 | 4 | 1800 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/linksys/linksys_mr7350_1.0), [Device](https://openwrt.org/inbox:toh:linksys:mr7350_1.0) |
 | Linksys | MR7500 | Qualcomm IPQ6018 | 512 | 1x 3.0 | 4 | 1800 | WiFi Router |  | GUI OEM | [HW](https://openwrt.org/toh/hwdata/linksys/linksys_mr7500), [Device](https://openwrt.org/toh/linksys/mr7500) |
 | Linksys | MX4200 | Qualcomm IPQ8174 | 1024 | 1x 3.0 | 4 | 1400 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/linksys/linksys_mx4200_v2), [Device](https://openwrt.org/toh/linksys/mx4200_v1_and_v2) |
