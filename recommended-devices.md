@@ -1,6 +1,6 @@
 Source: https://openwrt.org/toh.json
 Filters: RAM >= 512, Cores >= 2, MHz >= 1300, 5GHz contains 'ax', C.Release contains '2'
-Matches: 149
+Matches: 152
 | Brand | Model | CPU | RAM | USB | Cores | MHz | Type | Comments | Install | HwData |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 8devices | Mango DVK | Qualcomm IPQ6010 | 512 | 1x 3.0 | 4 | 1800 | Single Board Computer |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/8devices/8devices_mango_dvk) |
@@ -15,6 +15,7 @@ Matches: 149
 | Acer | Predator Connect W6 | MediaTek MT7986AV | 1024 | 1x 3.0 | 4 | 2000 | WiFi Router |  | see devicepage | [HW](https://openwrt.org/toh/hwdata/acer/acer_predator_w6), [Device](https://openwrt.org/toh/acer/predator_w6) |
 | Acer | Predator Connect W6d | MediaTek MT7986AV | 1024 | 1x 3.0 | 4 | 2000 | WiFi Router |  | see devicepage | [HW](https://openwrt.org/toh/hwdata/acer/acer_predator_w6d), [Device](https://openwrt.org/toh/acer/predator_w6) |
 | Acer | Predator Connect W6x | MediaTek MT7986AV | 1024 | 1x 3.0 | 4 | 2000 | WiFi Router |  | Serial | [HW](https://openwrt.org/toh/hwdata/acer/acer_predator_connect_w6x), [Device](https://openwrt.org/toh/acer/predator_connect_w6x) |
+| Adtran | SDG-8612 | MediaTek MT7986A | 2048 | 1x 3.0 | 4 | 2000 | WiFi Router | Device is picky with the power adapter. The LED next to the USB-C connector lights up red if the power adapter isn't accepted. | Serial | [HW](https://openwrt.org/toh/hwdata/adtran_bluesocket/adtran_bluesocket_sdg-8612) |
 | Airpi | AP3000M | MediaTek MT7981B | 1024 |  | 2 | 1300 | WiFi AP |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/airpi/airpi_ap3000m) |
 | Arcadyan / Astoria | AW1000 | Qualcomm IPQ8072A | 1024 | 1x 3.0 | 4 | 2000 | WiFi Router |  | U-Boot TFTP recovery, see git-commit | [HW](https://openwrt.org/toh/hwdata/arcadyanastoria/arcadyanastoria_aw1000), [Device](https://openwrt.org/toh/arcadyan/astoria/aw1000) |
 | Arcadyan / Astoria | Mozart | MediaTek MT7988A | 4096 |  | 4 | 1800 | WiFi Router |  | unknown | [HW](https://openwrt.org/toh/hwdata/arcadyan/astoria:arcadyan_astoria_mozart) |
@@ -62,6 +63,7 @@ Matches: 149
 | Linksys | MX4000 | Qualcomm IPQ8174 | 512 | 1x 3.0 | 4 | 1400 | WiFi Router |  | GUI OEM | [HW](https://openwrt.org/toh/hwdata/linksys/linksys_mx4000), [Device](https://openwrt.org/toh/linksys/mx4200_v1_and_v2) |
 | Linksys | MX4200 | Qualcomm IPQ8174 | 1024 | 1x 3.0 | 4 | 1400 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/linksys/linksys_mx4200_v2), [Device](https://openwrt.org/toh/linksys/mx4200_v1_and_v2) |
 | Linksys | MX4200 | Qualcomm IPQ8174 | 512 | 1x 3.0 | 4 | 1400 | WiFi Router |  | GUI OEM | [HW](https://openwrt.org/toh/hwdata/linksys/linksys_mx4200_v1_and_v2), [Device](https://openwrt.org/toh/linksys/mx4200_v1_and_v2) |
+| Linksys | MX4200C | Qualcomm IPQ8174 | 512 | 1x 3.0 | 4 | 1400 | WiFi Router | Identical to MX4200 v1, same FCC ID | GUI OEM | [HW](https://openwrt.org/toh/hwdata/linksys/linksys_mx4200c), [Device](https://openwrt.org/toh/linksys/mx4200_v1_and_v2) |
 | Linksys | MX4300 | Qualcomm IPQ8174 | 2048 | 1x 3.0 | 4 | 1400 | WiFi Router | HomeWRK and MX4300 share the same hardware but have different u-boot layout, hence use different OpenWrt firmware images. See more: https://github.com/openwrt/openwrt/pull/16070\ | see devicepage, see git-commit | [HW](https://openwrt.org/toh/hwdata/linksys/linksys_mx4300), [Device](https://openwrt.org/toh/linksys/mx4300) |
 | Linksys | MX5300 | Qualcomm IPQ8072A | 1024 | 1x 3.0 | 4 | 2200 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/linksys/linksys_mx5300), [Device](https://openwrt.org/toh/linksys/mx5300) |
 | Linksys | MX8500 | Qualcomm IPQ8072A | 1024 | 1x 3.0 | 4 | 2200 | WiFi Router |  | GUI OEM, see devicepage, see git-commit | [HW](https://openwrt.org/toh/hwdata/linksys/linksys_mx8500), [Device](https://openwrt.org/toh/linksys/mx8500) |
@@ -120,6 +122,7 @@ Matches: 149
 | TP-Link | EAP660 HD | Qualcomm IPQ8072A | 1024 | - | 4 | 2200 | WiFi AP |  | unknown | [HW](https://openwrt.org/toh/hwdata/tp-link/tp-link_eap660_hd_v1) |
 | TP-Link | EAP683 | MediaTek MT7986AV | 1024 | - | 4 | 2000 | WiFi AP | EAP683-UR model is hardware identical to EAP683-LR model. Hence it has been added as ALT0 variant. | see devicepage, see git-commit | [HW](https://openwrt.org/toh/hwdata/tp-link/tp-link_eap683_-ur), [Device](https://openwrt.org/toh/tp-link/eap683-lr) |
 | TP-Link | EAP683 | MediaTek MT7986AV | 1024 | - | 4 | 2000 | WiFi AP | EAP683-UR model is hardware identical to EAP683-LR model. Hence the UR model has been added as ALT0 variant. | see devicepage, see git-commit | [HW](https://openwrt.org/toh/hwdata/tp-link/tp-link_eap683_-lr), [Device](https://openwrt.org/toh/tp-link/eap683-lr) |
+| TP-Link | ER706W | MediaTek MT7981BA | 512 | 1x 3.0 | 2 | 1300 | WiFi Router | Identical hardware to FR365 v1. FR365 was FCC certified under a change of ID of this model. | U-Boot TFTP + serial recovery | [HW](https://openwrt.org/toh/hwdata/tp-link/tp-link_er706w_v1), [Device](https://openwrt.org/toh/tp-link/fr365_v1) |
 | TP-Link | FR365 | MediaTek MT7981BA | 512 | 1x 3.0 | 2 | 1300 | WiFi Router |  | U-Boot TFTP + serial recovery | [HW](https://openwrt.org/toh/hwdata/tp-link/tp-link_fr365_v1), [Device](https://openwrt.org/toh/tp-link/fr365_v1) |
 | TP-Link | RE6000XD | MediaTek MT7986BLA | 512 | - | 4 | 1600 | Range Extender |  | U-Boot TFTP + serial recovery | [HW](https://openwrt.org/toh/hwdata/tp-link/tp-link_re6000xd), [Device](https://openwrt.org/toh/tp-link/tp-link_re6000xd) |
 | TP-Link | TL-XDR4288 | MediaTek MT7986AV | 512 | 1x 3.0 | 4 | 2000 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/tp-link/tp-link_xdr-4288) |
