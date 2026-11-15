@@ -1,6 +1,6 @@
 Source: https://openwrt.org/toh.json
 Filters: RAM >= 512, Cores >= 2, MHz >= 1300, 5GHz contains 'ax', C.Release contains '2'
-Matches: 152
+Matches: 161
 | Brand | Model | CPU | RAM | USB | Cores | MHz | Type | Comments | Install | HwData |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 8devices | Mango DVK | Qualcomm IPQ6010 | 512 | 1x 3.0 | 4 | 1800 | Single Board Computer |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/8devices/8devices_mango_dvk) |
@@ -15,7 +15,7 @@ Matches: 152
 | Acer | Predator Connect W6 | MediaTek MT7986AV | 1024 | 1x 3.0 | 4 | 2000 | WiFi Router |  | see devicepage | [HW](https://openwrt.org/toh/hwdata/acer/acer_predator_w6), [Device](https://openwrt.org/toh/acer/predator_w6) |
 | Acer | Predator Connect W6d | MediaTek MT7986AV | 1024 | 1x 3.0 | 4 | 2000 | WiFi Router |  | see devicepage | [HW](https://openwrt.org/toh/hwdata/acer/acer_predator_w6d), [Device](https://openwrt.org/toh/acer/predator_w6) |
 | Acer | Predator Connect W6x | MediaTek MT7986AV | 1024 | 1x 3.0 | 4 | 2000 | WiFi Router |  | Serial | [HW](https://openwrt.org/toh/hwdata/acer/acer_predator_connect_w6x), [Device](https://openwrt.org/toh/acer/predator_connect_w6x) |
-| Adtran | SDG-8612 | MediaTek MT7986A | 2048 | 1x 3.0 | 4 | 2000 | WiFi Router | Device is picky with the power adapter. The LED next to the USB-C connector lights up red if the power adapter isn't accepted. | Serial | [HW](https://openwrt.org/toh/hwdata/bluesocket/bluesocket_sdg-8612), [Device](https://openwrt.org/toh/adtran_bluesocket/sdg-8612) |
+| Adtran | SDG-8612 | MediaTek MT7986A | 2048 | 1x 3.0 | 4 | 2000 | WiFi Router | Device is picky with the power adapter. The LED next to the USB-C connector lights up red if the power adapter isn't accepted. | see git-commit | [HW](https://openwrt.org/toh/hwdata/bluesocket/bluesocket_sdg-8612), [Device](https://openwrt.org/toh/adtran_bluesocket/sdg-8612) |
 | Airpi | AP3000M | MediaTek MT7981B | 1024 |  | 2 | 1300 | WiFi AP |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/airpi/airpi_ap3000m) |
 | Arcadyan / Astoria | AW1000 | Qualcomm IPQ8072A | 1024 | 1x 3.0 | 4 | 2000 | WiFi Router |  | U-Boot TFTP recovery, see git-commit | [HW](https://openwrt.org/toh/hwdata/arcadyanastoria/arcadyanastoria_aw1000), [Device](https://openwrt.org/toh/arcadyan/astoria/aw1000) |
 | Arcadyan / Astoria | Mozart | MediaTek MT7988A | 4096 |  | 4 | 1800 | WiFi Router |  | unknown | [HW](https://openwrt.org/toh/hwdata/arcadyan/astoria:arcadyan_astoria_mozart) |
@@ -32,6 +32,7 @@ Matches: 152
 | Cudy | TR3000 | MediaTek MT7981BA | 512 | 1x 3.0 | 2 | 1300 | Travel Router | Currently, Uboot Mod image (UBI) is only available for TR3000 128MB model.  There is no Uboot Mod Image for TR3000 256 MB model. | see git-commit | [HW](https://openwrt.org/toh/hwdata/cudy/cudy_tr3000_v1_256mb), [Device](https://openwrt.org/toh/cudy/tr3000) |
 | Cudy | WBR3000UAX | MediaTek MT7981B | 512 | 1x 3.0 | 2 | 1300 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/cudy/cudy_wbr3000uax_v1) |
 | Cudy | WR3000P | MediaTek MT7981 | 512 | Yes, 1x 2.0 | 2 | 1300 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/cudy/cudy_wr3000p_v1), [Device](https://openwrt.org/toh/cudy/wr3000p_v1) |
+| Cudy | WR3000U | MediaTek MT7981B | 512 | 1x 3.0 | 2 | 1300 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/cudy/cudy_wr3000u_v1) |
 | D-Link | AQUILA PRO AI E30 | MediaTek MT7981BA | 512 | - | 2 | 1300 | Range Extender | E30 has 1 LAN port only.  The device can either be configured as an Access Point or a WiFi extender | D-Link Recovery GUI, see git-commit | [HW](https://openwrt.org/toh/hwdata/d-link/d-link_aquila_pro_ai_e30_a1), [Device](https://openwrt.org/toh/d-link/aquila_pro_ai_e30_a1) |
 | D-Link | AQUILA PRO AI M30 | MediaTek MT7981BA | 512 | - | 2 | 1300 | WiFi Router |  | D-Link Recovery GUI | [HW](https://openwrt.org/toh/hwdata/d-link/d-link_aquila_pro_ai_m30), [Device](https://openwrt.org/toh/d-link/aquila_pro_ai_m30_a1) |
 | D-Link | AQUILA PRO AI M60 | MediaTek MT7986AV | 512 | - | 4 | 2000 | WiFi Router |  | D-Link Recovery GUI, see git-commit | [HW](https://openwrt.org/toh/hwdata/d-link/d-link_aquila_pro_ai_m60_a1), [Device](https://openwrt.org/toh/d-link/aquila_pro_ai_m60_a1) |
@@ -48,9 +49,17 @@ Matches: 152
 | GL.iNet | GL-MT6000 (Flint 2) | MediaTek MT7986AV | 1024 | 1x 3.0 | 4 | 2000 | WiFi Router | Includes 8GB eMMC, support for DSA, HFO, and WED. | GUI OEM, CLI generic, Sysupgrade, GL.Inet installation, U-Boot TFTP + serial recovery, U-Boot web recovery | [HW](https://openwrt.org/toh/hwdata/gl.inet/gl.inet_gl-mt6000), [Device](https://openwrt.org/toh/gl.inet/gl-mt6000) |
 | GL.iNet | GL-X3000 (Spitz AX) | MediaTek MT7981A | 512 | 1x 2.0 | 2 | 1300 | Router |  | GL.Inet installation, U-Boot web recovery, see git-commit | [HW](https://openwrt.org/toh/hwdata/gl.inet/gl.inet_gl-x3000), [Device](https://openwrt.org/toh/gl.inet/gl-x3000) |
 | GL.iNet | GL-XE3000 (Puli AX) | MediaTek MT7981A | 512 | 1x 2.0 | 2 | 1300 | Travel Router - Battery powered |  | GL.Inet installation, U-Boot web recovery, see git-commit | [HW](https://openwrt.org/toh/hwdata/gl.inet/gl.inet_gl-xe3000), [Device](https://openwrt.org/toh/gl.inet/gl-x3000) |
+| Globitel | BT-R320 | MediaTek MT7981B | 1024 | Yes, 1x 3.0 | 2 | 1300 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/globitel/globitel_bt-r320) |
+| Hiveton | H5000M | MediaTek MT7987A | 1024 | 1x Power only | 4 | 2000 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/hiveton/hiveton_h5000m) |
 | Huasifei | WH3000 | MediaTek MT7981A | 1024 | Yes, 1x 3.0 | 2 | 1300 | Travel Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/huasifei/huasifei_wh3000_pro) |
 | Huasifei | WH3000 | MediaTek MT7981A | 1024 | 1x 3.0 | 2 | 1300 | Travel Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/huasifei/huasifei_wh3000) |
+| Huasifei | WH3000R | MediaTek MT7981B | 512 | Yes, 1x 3.0 | 2 | 1300 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/huasifei/huasifei_wh3000r_nand) |
 | JDCloud | RE-CP-03 | MediaTek MT7986A | 1024 | - | 4 | 1600 | WiFi Router |  | see devicepage | [HW](https://openwrt.org/toh/hwdata/jdcloud/jdcloud_re-cp-03) |
+| JioRouter | AX6000 JIDU6101 | MediaTek MT7986AV | 512 | Yes | 4 | 2000 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/jiorouter/jiorouter_ax6000_jidu6101) |
+| JioRouter | AX6000 JIDU6J01 | MediaTek MT7986A | 512 | Yes | 4 | 2000 | WiFi Router |  |  | [HW](https://openwrt.org/toh/hwdata/jiorouter/jiorouter_ax6000_jidu6j01) |
+| Keenetic | KAP-630 (Orbiter 6) | MediaTek MT7981 | 512 | - | 2 | 1300 | WiFi AP |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/keenetic/keenetic_kap-630) |
+| Keenetic | KN-1812 (Titan) | MediaTek MT7988D | 1024 | Yes, 1x 2.0, 1x 3.0 | 3 | 1800 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/keenetic/keenetic_kn-1812) |
+| Keenetic | KN-3711 (Sprinter) | MediaTek MT7981BA | 512 | - | 2 | 1300 | Range Extender |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/keenetic/keenetic_kn-3711_sprinter) |
 | Keenetic | KN-3811 (Hopper) | MediaTek MT7981B | 512 | 1x 3.0 | 2 | 1300 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/keenetic/keenetic_kn-3811) |
 | Keenetic | KN-3911 (Challenger SE) | MediaTek MT7981B | 512 | - | 2 | 1300 | Range Extender |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/keenetic/keenetic_kn-3911) |
 | Linksys | E8450 | MediaTek MT7622BV | 512 | 1x 2.0 | 2 | 1350 | WiFi Router |  | see devicepage | [HW](https://openwrt.org/toh/hwdata/linksys/linksys_e8450), [Device](https://openwrt.org/toh/linksys/e8450) |
@@ -67,6 +76,7 @@ Matches: 152
 | Linksys | MX4300 | Qualcomm IPQ8174 | 2048 | 1x 3.0 | 4 | 1400 | WiFi Router | HomeWRK and MX4300 share the same hardware but have different u-boot layout, hence use different OpenWrt firmware images. See more: https://github.com/openwrt/openwrt/pull/16070\ | see devicepage, see git-commit | [HW](https://openwrt.org/toh/hwdata/linksys/linksys_mx4300), [Device](https://openwrt.org/toh/linksys/mx4300) |
 | Linksys | MX5300 | Qualcomm IPQ8072A | 1024 | 1x 3.0 | 4 | 2200 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/linksys/linksys_mx5300), [Device](https://openwrt.org/toh/linksys/mx5300) |
 | Linksys | MX8500 | Qualcomm IPQ8072A | 1024 | 1x 3.0 | 4 | 2200 | WiFi Router |  | GUI OEM, see devicepage, see git-commit | [HW](https://openwrt.org/toh/hwdata/linksys/linksys_mx8500), [Device](https://openwrt.org/toh/linksys/mx8500) |
+| Livinet | Li320 | MediaTek MT7981B | 512 | - | 2 | 1300 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/livinet/livinet_li320) |
 | MERCUSYS | MR80X | MediaTek MT7981BA | 512 | - | 2 | 1300 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/mercusys/mercusys_mr80x_v3) |
 | MERCUSYS | MR85X | Mediatek MT7981BA | 512 | - | 2 | 1300 | WiFi Router |  | GUI generic | [HW](https://openwrt.org/toh/hwdata/mercusys/mercusys_mr85x), [Device](https://openwrt.org/toh/mercusys/mr85x_v1) |
 | MERCUSYS | MR90X | MediaTek MT7986BLA | 512 | - | 4 | 1600 | WiFi Router |  | see devicepage | [HW](https://openwrt.org/toh/hwdata/mercusys/mercusys_mr90x_v1), [Device](https://openwrt.org/toh/mercusys/mr90x_v1) |
@@ -107,7 +117,6 @@ Matches: 152
 | SmartRG | SDG-8614 | MediaTek MT7986A | 2048 | 1x 3.0 | 4 | 2000 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8614) |
 | SmartRG | SDG-8622 | MediaTek MT7986 | 2048 | 1x 3.0 | 4 | 2000 | WiFi AP |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8622) |
 | SmartRG | SDG-8632 | MediaTek MT7986 | 2048 | 1x 3.0 | 4 | 2000 | WiFi AP |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8632) |
-| SmartRG | SDG-8712 | MediaTek MT7987A | 1024 | Yes, 1x 2.0 | 4 | 2000 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8712) |
 | SmartRG | SDG-8733 | MediaTek MT7988AV | 2048 | 1x 3.0 | 4 | 1800 | WiFi Router | OEM firmware DL requires (free) registration with vendor. | U-Boot TFTP + serial recovery | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8733), [Device](https://openwrt.org/toh/smartrg/sdg-8733) |
 | SmartRG | SDG-8733A | MediaTek MT7988D | 2048 | 1x 3.0 | 3 | 1800 | WiFi Router | OEM firmware DL requires (free) registration with vendor. | see git-commit | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8733a), [Device](https://openwrt.org/toh/smartrg/sdg-8733) |
 | SmartRG | SDG-8734 | MediaTek MT7988AV | 2048 | 1x 3.0 | 4 | 1800 | WiFi Router | OEM firmware DL requires (free) registration with vendor. | unknown | [HW](https://openwrt.org/toh/hwdata/smartrg/smartrg_sdg-8734) |
