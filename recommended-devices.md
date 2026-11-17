@@ -1,6 +1,6 @@
 Source: https://openwrt.org/toh.json
 Filters: RAM >= 512, Cores >= 2, MHz >= 1300, 5GHz contains 'ax', C.Release contains '2'
-Matches: 161
+Matches: 163
 | Brand | Model | CPU | RAM | USB | Cores | MHz | Type | Comments | Install | HwData |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 8devices | Mango DVK | Qualcomm IPQ6010 | 512 | 1x 3.0 | 4 | 1800 | Single Board Computer |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/8devices/8devices_mango_dvk) |
@@ -144,6 +144,8 @@ Matches: 161
 | Ubiquiti | UniFi 6 LR | MediaTek MT7622 | 512 | - | 2 | 1350 | WiFi AP | See device page for details on identifying variants | see devicepage | [HW](https://openwrt.org/toh/hwdata/ubiquiti/ubiquiti_unifi_6_lr_v3), [Device](https://openwrt.org/toh/ubiquiti/unifi_6_lr) |
 | Ubiquiti | UniFi 6 LR | MediaTek MT7622 | 512 | - | 2 | 1350 | WiFi AP | Replaced by similar v3 in ~August 2022.  v3 has 1GBps (instead of 2.5 GBps) PHY. | see devicepage | [HW](https://openwrt.org/toh/hwdata/ubiquiti/ubiquiti_unifi_6_lr_v2), [Device](https://openwrt.org/toh/ubiquiti/unifi_6_lr) |
 | WAVLINK | WL-WN536AX6 | MediaTek MT7986AV | 512 | 1x 3.0 | 4 | 2000 | WiFi Router |  | see forum, see git-commit | [HW](https://openwrt.org/toh/hwdata/wavlink/wavlink_wl-wn536ax6_rev_a), [Device](https://openwrt.org/toh/wavlink/wl-wn536ax6_rev_a) |
+| WAVLINK | WL-WNT100X3 | MediaTek MT7981B | 512 | Yes, 1x 3.0, 1x Power only | 2 | 1300 | WiFi Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/wavlink/wavlink_wl-wnt100x3_ubootmod) |
+| WAVLINK | WL-WNT100X3 | MediaTek MT7981B | 512 | Yes, 1x 3.0, 1x Power only | 2 | 1300 | Travel Router |  | see git-commit | [HW](https://openwrt.org/toh/hwdata/wavlink/wavlink_wl-wnt100x3) |
 | Xiaomi | AX9000 | Qualcomm IPQ8072A | 1024 | 1x 3.0 | 4 | 2200 | WiFi Router |  | CLI generic | [HW](https://openwrt.org/toh/hwdata/xiaomi/xiaomi_ax9000), [Device](https://openwrt.org/toh/xiaomi/ax9000) |
 | Xiaomi | Mi AIoT Router AX3600 | Qualcomm IPQ8071A | 512 | - | 4 | 1400 | WiFi Router |  | see devicepage | [HW](https://openwrt.org/toh/hwdata/xiaomi/xiaomi_ax3600), [Device](https://openwrt.org/toh/xiaomi/ax3600) |
 | Xiaomi | Redmi AX6 | Qualcomm IPQ8071A | 512 | - | 4 | 1400 | WiFi Router |  | see devicepage | [HW](https://openwrt.org/toh/hwdata/xiaomi/xiaomi_redmi_ax6), [Device](https://openwrt.org/inbox:toh:xiaomi:xiaomi_redmi_ax6_ax3000) |
